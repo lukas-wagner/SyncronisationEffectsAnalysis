@@ -2,7 +2,7 @@
 
 Simulation and optimization code for the paper
 
-> T. Hein, L. Wagner, A. Bernhard, F. Ocker, "Price-Optimized EV and Heat-Pump Scheduling Can Exceed Uncoordinated Feeder Peaks", submitted to IEEE IES ONCON 2026.
+> T. Hein, L. P. Wagner, A. Bernhard, F. Ocker, "Price-Optimized EV and Heat-Pump Scheduling Can Exceed Uncoordinated Feeder Peaks", submitted to IEEE IES ONCON 2026. Preprint: [arXiv:2610.05916](https://arxiv.org/abs/2610.05916), DOI [10.48550/arXiv.2610.05916](https://doi.org/10.48550/arXiv.2610.05916).
 
 The study quantifies load synchronization on a rural low-voltage feeder when electric vehicles (EVs) and heat pumps (HPs) all optimize against the same electricity price, and compares this with uncoordinated charging and transformer-aware central scheduling.
 
@@ -71,3 +71,20 @@ Each run writes its power-flow time series (`*_results.json`) and plots to `outp
 - **Grid fee:** § 14a EnWG Module 3 values from the Stadtwerke Norderstedt 2026 price sheet, set in `config.json`.
 
 All random draws (device placement, mobility, start times) use fixed seeds, so runs are reproducible.
+
+## Citation
+
+If you use this code, please cite the preprint:
+
+```bibtex
+@misc{hein2026priceoptimized,
+  title         = {Price-Optimized {EV} and Heat-Pump Scheduling Can Exceed Uncoordinated Feeder Peaks},
+  author        = {Hein, Tatjana and Wagner, Lukas P. and Bernhard, Alex and Ocker, Felix},
+  year          = {2026},
+  eprint        = {2610.05916},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.SY},
+  doi           = {10.48550/arXiv.2610.05916},
+  url           = {https://arxiv.org/abs/2610.05916}
+}
+```
